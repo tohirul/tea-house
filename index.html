@@ -26,7 +26,9 @@
                         colors: {
                             clr_dark: "#777777",
                             clr_darker: "#1C1C1C",
-                            clr_card_bg: "#F4F4F4"
+                            clr_card_bg: "#F4F4F4",
+                            clr_gradient_light: "#FF8938",
+                            clr_gradient_deep: "#FF0000",
                         }
                     }
                 }
@@ -41,16 +43,18 @@
         <!-- ? Header Section -->
         <header>
             <section
-                class="container mx-auto py-16 px-4 lg:px-20 flex justify-center items-center gap-x-8 gap-y-8 flex-col lg:flex-row">
+                class="container mx-auto py-8 lg:py-12 xl:py-20 px-4 lg:px-8 xl:px-20 flex  flex-col lg:flex-row justify-center items-center gap-x-8 gap-y-8">
+                <!-- ? Banner Text Section -->
                 <div class="p-3 lg:p-8 space-y-7">
-                    <h1 class="text-clr_darker text-5xl md:text-7xl font-extrabold">It's good <br>
+                    <h1 class="text-clr_darker text-5xl md:text-6xl xl:text-7xl font-extrabold">It's good <br>
                         tea time at <br>The Tea House</h1>
                     <p class="text-lg text-clr_dark font-medium">Tea and Botanical Solutions Supplier Give Optimum <br>
                         Satisfaction To Your Taste Buds.</p>
                     <button
-                        class="px-5 py-4 flex justify-center items-center gap-3 rounded-lg bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white font-bold text-xl">Explore
+                        class="px-5 py-4 flex justify-center items-center gap-3 rounded-lg bg-gradient-to-r from-clr_gradient_light to-clr_gradient_deep text-white font-bold text-xl">Explore
                         More <img src="./images/arrow.png" alt=""></button>
                 </div>
+                <!-- ? Banner Image Section -->
                 <div class="relative">
                     <img class="" src="./images/banner.png" alt="Ice tea">
                     <button
@@ -71,15 +75,19 @@
 
             <!-- ? Products -->
             <section class="container mx-auto py-8 lg:py-16 px-4">
+                <!-- ? Products Section Heading -->
                 <h2 class="my-6 text-clr_darker text-center text-5xl font-extrabold ">Our Featured Products</h2>
+                <!-- ? Products Section Subtext -->
                 <p class="text-clr_dark text-center font-medium">There are many variations of passages of Lorem Ipsum
                     available, but
                     the majority
                     have suffered
                     alteration in some form, <br>
                     by injected humour, or randomized words which don't look even slightly believable.</p>
+
+                <!-- ? Product Cards Section -->
                 <div class="py-16 flex justify-center items-center gap-6 flex-col md:flex-row flex-wrap">
-                    <!-- ? Product Cards -->
+                    <!-- ? Card 1 -->
                     <div
                         class="py-7 px-8 rounded-lg shadow-md flex justify-center items-center flex-col gap-8 bg-gradient-to-b from-clr_card_bg to-white">
                         <img src="./images/tea-1.png" alt="">
@@ -88,6 +96,7 @@
                             <p class="text-clr_dark font-semibold">Creamer could be replaced <br> by fresh milk</p>
                         </div>
                     </div>
+                    <!-- ? Card 2 -->
                     <div
                         class="py-7 px-8 rounded-lg shadow-md flex justify-center items-center flex-col gap-8 bg-gradient-to-b from-clr_card_bg to-white">
                         <img src="./images/tea-2.png" alt="">
@@ -96,6 +105,7 @@
                             <p class="text-clr_dark font-semibold">Creamer could be replaced <br> by fresh milk</p>
                         </div>
                     </div>
+                    <!-- ? Card 3 -->
                     <div
                         class="py-7 px-8 rounded-lg shadow-md flex justify-center items-center flex-col gap-8 bg-gradient-to-b from-clr_card_bg to-white">
                         <img src="./images/tea-3.png" alt="">
@@ -104,6 +114,7 @@
                             <p class="text-clr_dark font-semibold">Creamer could be replaced <br> by fresh milk</p>
                         </div>
                     </div>
+                    <!-- ? Card 4 -->
                     <div
                         class="py-7 px-8 rounded-lg shadow-md flex justify-center items-center flex-col gap-8 bg-gradient-to-b from-clr_card_bg to-white">
                         <img src="./images/tea-4.png" alt="">
@@ -115,11 +126,12 @@
                 </div>
             </section>
 
-            <!-- ? Article -->
+            <!-- ? Article Section -->
             <section class="container md:mx-auto py-8 lg:py-16 px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+
+                    <!-- ? Cold Drink Collage Section -->
                     <div class="lg:ml-32 flex justify-center items-center gap-7">
-                        <!-- ? Cold Drink Collage -->
                         <div class="w-[238px] h-[521px] grid grid-cols-1 grid-rows-3 gap-7">
                             <div
                                 class="w-full rounded-lg row-span-1  bg-gradient-to-r from-[#ff0000] to-[#ff8938] opacity-20">
@@ -136,10 +148,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="max-w-xl p-2 space-y-6">
-                        <!-- ? Article -->
+                    <!-- ? Article Section -->
+                    <div class="max-w-xl px-12 py-4 lg:p-2 space-y-6 mx-auto lg:m-0">
+                        <!-- ? Article Heading -->
                         <h2 class="leading-[61px] text-clr_darker text-5xl font-extrabold">Great Tea, Freshly <br>
                             Presented</h2>
+                        <!-- ? Article Details -->
                         <p class="leading-7 text-clr_dark text-base font-medium">
                             The meaning of gong cha is chanese is to provide the best tea to emperor from all
                             possessions . It represents the
@@ -148,13 +162,17 @@
                             of good words of mouth and unique customized service orginated from Taiwan.
                         </p>
                         <div class="space-y-3">
+                            <!-- ? Article Subheading -->
                             <h4 class="text-clr_darker text-xl font-extrabold">Unique Test</h4>
+                            <!-- ? details -->
                             <p class="leading-7 text-clr_dark text-base font-medium">A Unique and different style from
                                 other
                                 teapots gives a <br> luxurious and minimalist impression</p>
                         </div>
                         <div class="space-y-3">
+                            <!-- ? Article Subheading -->
                             <h4 class="text-clr_darker text-xl font-extrabold">Premium Quality</h4>
+                            <!-- ? details -->
                             <p class="leading-7 text-clr_dark text-base font-medium">
                                 Premium Quality that makes tea more elegant and more <br> durable when you use it.
                             </p>
@@ -163,26 +181,34 @@
                 </div>
             </section>
 
-            <!-- ? Clients -->
+            <!-- ? Clients Section -->
             <section class="container sm:mx-auto py-8 xl:py-16 px-4 xl:px-14 flex justify-center items-center">
                 <div
-                    class="clients w-full xl:w-4/5 min-h-[650px] px-4 md:pl-10 md:pr-6 pt-10 md:pt-20 rounded-lg flex justify-center items-center flex-col 2xl:flex-row flex-wrap lg:gap-2  xl:gap-0 bg-gradient-to-r from-[#FF8938] to-[#FF0000]">
+                    class="clients w-full xl:w-4/5 min-h-[650px] px-4 md:pl-10 md:pr-6 pt-10 md:pt-20 rounded-lg flex flex-col 2xl:flex-row flex-wrap justify-center items-center  lg:gap-2  xl:gap-0 bg-gradient-to-r from-clr_gradient_light to-clr_gradient_deep">
+
+                    <!-- ? Section Article -->
                     <div class="w-full 2xl:w-1/2 px-6 space-y-6  ">
+                        <!-- ? Section Heading -->
                         <h2 class="text-4xl lg:text-5xl leading-10 lg:leading-[61px] font-extrabold text-white">Meet Our
                             Super
                             <br>Clients
                         </h2>
+                        <!-- ? Section Details -->
                         <p class="text-white font-medium text-base leading-7">There are many variations of passages of
                             Lorem Ipsum
                             available, but the
                             majority have
                             suffered alteration in some form,
                             by injected humour, or randomised words which don't look even slightly believable.</p>
-                        <button class="py-3 px-5 rounded-md bg-white text-[#FF0000] text-xl font-bold">Show All</button>
+
+                        <button class="py-3 px-5 rounded-md bg-white text-clr_gradient_deep text-xl font-bold">Show
+                            All</button>
                     </div>
+                    <!-- ? Responsive Slider Card Section -->
                     <div class="cards w-full 2xl:w-1/2 px-4">
-                        <div class="outer">
-                            <div class="card w-[360px] xl:w-[430px] rounded-lg bg-white" style="--delay: -1">
+                        <div class="outer -my-8 xl:-my-0">
+                            <!-- ? Card 1 -->
+                            <div class="card w-[360px] md:w-[430px] rounded-lg bg-white" style="--delay: -1">
                                 <div class="w-full p-5 lg:px-12 space-y-3 relative">
                                     <img class="w-[60px] h-[60px] border-red-white border-2 rounded-full sm:absolute sm:top-[-30px] sm:left-[-30px]"
                                         src="./images/client-1.png" alt="Ihlam Huda Image">
@@ -197,7 +223,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card w-[360px] xl:w-[430px] rounded-lg bg-white" style="--delay: 0">
+                            <!-- ? Card 2 -->
+                            <div class="card w-[360px] md:w-[430px] rounded-lg bg-white" style="--delay: 0">
                                 <div class="w-full p-5 lg:px-12 space-y-3 relative">
                                     <img class="w-[60px] h-[60px] border-red-white border-2 rounded-full sm:absolute sm:top-[-30px] sm:left-[-30px]"
                                         src="./images/client-2.png" alt="Hose Filix Image">
@@ -212,7 +239,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card w-[360px] xl:w-[430px] rounded-lg bg-white" style="--delay: 1">
+                            <!-- ? Card 3 -->
+                            <div class="card w-[360px] md:w-[430px] rounded-lg bg-white" style="--delay: 1">
                                 <div class="w-full p-5 lg:px-12 space-y-3 relative">
                                     <img class="w-[60px] h-[60px] border-red-white border-2 rounded-full sm:absolute sm:top-[-30px] sm:left-[-30px]"
                                         src="./images/client-3.png" alt="Natan Bronson Image">
@@ -227,7 +255,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card w-[360px] xl:w-[430px] rounded-lg bg-white" style="--delay: 2">
+                            <!-- ? Card 4 -->
+                            <div class="card w-[360px] md:w-[430px] rounded-lg bg-white" style="--delay: 2">
                                 <div class="w-full p-5 lg:px-12 space-y-3 relative">
                                     <img class="w-[60px] h-[60px] border-red-white border-2 rounded-full sm:absolute sm:top-[-30px] sm:left-[-30px]"
                                         src="./images/client-4.png" alt="Paige Owens Image">
@@ -242,7 +271,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card w-[360px] xl:w-[430px] rounded-lg bg-white" style="--delay: 2">
+                            <!-- ? Card 5 -->
+                            <div class="card w-[360px] md:w-[430px] rounded-lg bg-white" style="--delay: 2">
                                 <div class="w-full p-5 lg:px-12 space-y-3 relative">
                                     <img class="w-[60px] h-[60px] border-red-white border-2 rounded-full sm:absolute sm:top-[-30px] sm:left-[-30px]"
                                         src="./images/client-5.png" alt="Gianna Doe Image">
@@ -264,17 +294,20 @@
 
             </section>
 
-            <!-- ? News Events -->
+            <!-- ? News Events Section -->
             <section class="container md:mx-auto py-8 lg:py-16 px-4 md:px-8 lg:px-14">
+                <!-- ? Section Heading -->
                 <h2 class="my-6 text-clr_darker text-center text-5xl font-extrabold ">News & Events</h2>
+                <!-- ? Section Subheading -->
                 <p class="text-clr_dark text-center font-medium">There are many variations of passages of Lorem Ipsum
                     available, but
                     the majority
                     have suffered
                     alteration in some form, <br>
                     by injected humour, or randomized words which don't look even slightly believable.</p>
-
+                <!-- ? News Cards Section -->
                 <div class="w-4/5 py-7 mx-auto flex flex-wrap justify-center items-center gap-5">
+                    <!-- ? Card 1 -->
                     <div class="w-[364px] p-6 space-y-4 border border-gray-300 rounded-lg">
                         <img src="./images/news-1.png" alt="Milk Tea">
                         <p class=" text-clr_dark text-sm font-medium ">Feb 05, 2022</p>
@@ -283,6 +316,7 @@
                             officiis?</p>
                         <button class="text-clr_darker text-base font-extrabold">Learn more</button>
                     </div>
+                    <!-- ? Card 2 -->
                     <div class="w-[364px] p-6 space-y-4 border border-gray-300 rounded-lg">
                         <img src="./images/news-2.png" alt="Lemon Tea">
                         <p class=" text-clr_dark text-sm font-medium ">March 08, 2023</p>
@@ -291,6 +325,7 @@
                             officiis?</p>
                         <button class="text-clr_darker text-base font-extrabold">Learn more</button>
                     </div>
+                    <!-- ? Card 3 -->
                     <div class="w-[364px] p-6 space-y-4 border border-gray-300 rounded-lg">
                         <img src="./images/news-3.png" alt="Green Tea">
                         <p class=" text-clr_dark text-sm font-medium ">Jan 26, 2023</p>
@@ -304,6 +339,7 @@
             </section>
         </main>
 
+        <!-- ? Footer -->
         <footer class="w-full m-0 pt-4 lg:pt-16 bg-gradient-to-r from-[#FF00001A] to-[#FF89381A]">
             <div class="container px-4 md:px-18 py-5 lg:py-12 mx-auto">
                 <div class="w-3/4 mx-auto">
@@ -321,6 +357,7 @@
                     </div>
                     <!-- ? Footer Options -->
                     <div class="py-8 lg:py-20 grid grid-cols-2 gap-4 sm:gap-16 lg:grid-cols-4 lg:gap-8">
+                        <!-- ? Navigation Links -->
                         <div class="links space-y-3">
                             <h3 class="text-clr_darker text-lg font-semibold">Quick Links</h3>
                             <ul class="text-clr_dark text-base font-medium space-y-2">
@@ -330,6 +367,7 @@
                                 <li>Privacy Policy</li>
                             </ul>
                         </div>
+                        <!-- ? Services Links -->
                         <div class="services space-y-3">
                             <h3 class="text-clr_darker text-lg font-semibold">Our Services</h3>
                             <ul class="text-clr_dark text-base font-medium space-y-2">
@@ -339,14 +377,15 @@
                                 <li>Ice Tea</li>
                             </ul>
                         </div>
+                        <!-- ? Help Section -->
                         <div class="help space-y-3">
                             <h3 class="text-clr_darker text-lg font-semibold">Help</h3>
                             <ul class="text-clr_dark text-base font-medium space-y-2">
                                 <li>FAQ</li>
                                 <li>Contact us</li>
-
                             </ul>
                         </div>
+                        <!-- ? Newsletter Subscription -->
                         <div class="newsletter">
                             <h3 class=" leading-10 text-clr_darker text-xl font-bold">Subscribe to our <br>
                                 newsletter
@@ -362,6 +401,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ? Footer Copyright -->
                     <p class="mx-auto text-center text-clr_darker text-sm font-normal">© 2027 UIDesign.to - All rights
                         reserved.
                     </p>

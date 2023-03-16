@@ -6,9 +6,9 @@ body {
 }
 
 .cards {
+	min-height: 650px;
 	display: grid;
 	place-items: center;
-	min-height: 650px;
 	position: relative;
 }
 
